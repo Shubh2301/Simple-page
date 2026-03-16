@@ -899,51 +899,6 @@ footer .top-footer {
 }
 
 
-/* Responsive */
-/* @media (max-width:768px){
-    body {
-    width: 100%;
-}
-header{
-    background-color: red;
-     padding: 15px 0px;
-}
-nav ul {
-    display: none;
-    
-}
-.right-nav .btn{
-    display: none;
-}
-nav .logo{
-    padding: 25px;
-}
-.logo h2 {
-    font-size: 25px;
-    font-weight: 700;
-}
-
-.logo h2 span {
-    color: #F29F05;
-}
-.nav-hamburger{
-    display: block;
-}
-
-main{
-    width: 100%;
-}
-
-} */
-
-
-
-
-
-/* res */
-
-/* Responsive for devices <= 768px */
-
 @media (max-width: 768px) {
 
 
@@ -1101,7 +1056,6 @@ main{
 
     .left-top h1 {
         font-size: 3.1rem;
-        background-color: red;
     }
 
     .left-top p {
