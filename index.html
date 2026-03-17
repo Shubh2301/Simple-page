@@ -17,7 +17,7 @@
             </div>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About us</a></li>
+                <li><a href="./pages/AboutUs.html">About us</a></li>
                 <li><a href="#">Restaurants</a></li>
                 <li><a href="#">Pages</a></li>
                 <li><a href="#">Contact</a></li>
@@ -36,10 +36,17 @@
                 <h1>The Best Restaurants In Your Home</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit, sed do eiusmod tempor.</p>
                 <nav class="drop-down">
-                    <input type="text" placeholder="Choose a Restaurants">
+                    <select name="restaurant">
+                        <div class="option">
+                            <option value="" selected>Choose a Restaurant</option>
+                            <option value="restaurant1">Restaurant 1</option>
+                            <option value="restaurant2">Restaurant 2</option>
+                            <option value="restaurant3">Restaurant 3</option>
+                            <option value="restaurant4">Restaurant 4</option>
+                        </div>
+                    </select>
                     <button>ORDER NOW</button>
                 </nav>
-
             </div>
             <div class="hero-img">
                 <img src="https://bslthemes.com/html/quickeat/assets/img/photo-1.png" alt="">
@@ -91,7 +98,7 @@
         <section class="best-res sec-padding">
             <div class="res-left">
                 <div class="left-top">
-                    <h1>12 Best Restaurants in  Your City</h1>
+                    <h1>12 Best Restaurants in Your City</h1>
                     <p>Magna sit amet purus gravida quis blandit turpis cursus. <br> Venenatis tellus in metus
                         vulputate.</p>
                 </div>
@@ -229,7 +236,7 @@
                     </div>
                 </div>
                 <!--  -->
-                 <div class="recipes">
+                <div class="recipes">
                     <img src="	https://bslthemes.com/html/quickeat/assets/img/food-2.jpg" alt="">
                     <div class="recipe-box">
                         <ul class="tags">
@@ -247,7 +254,7 @@
                     </div>
                 </div>
                 <!-- -->
-                 <div class="recipes">
+                <div class="recipes">
                     <img src="	https://bslthemes.com/html/quickeat/assets/img/food-3.jpg" alt="">
                     <div class="recipe-box">
                         <ul class="tags">
@@ -283,7 +290,8 @@
             <div class="left">
                 <h2>QUICK<span>EAT</span></h2>
                 <h1>The Best <br> Restaurants <br> in Your Home</h1>
-                <p>Vitae congue mauris rhoncus aenean. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Tempus egestas sed sed risus pretium quam.</p>
+                <p>Vitae congue mauris rhoncus aenean. Enim nulla aliquet porttitor lacus luctus accumsan tortor
+                    posuere. Tempus egestas sed sed risus pretium quam.</p>
             </div>
             <div class="mid">
                 <h3>MENU</h3>
@@ -300,8 +308,19 @@
                 <hr>
                 <p>quickeat@mail.net</p>
                 <p>+1 425 326 16 27</p>
-            </div>   
+            </div>
         </div>
     </footer>
+
+    <!-- ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+        integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
 </body>
+
 </html>

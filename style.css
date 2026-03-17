@@ -9,6 +9,7 @@ body {
     background-color: #FFEDED;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     overflow-x: hidden;
     width: 100%;
@@ -18,7 +19,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 200px;
+    padding: 70px 200px;
 }
 
 nav {
@@ -29,6 +30,7 @@ nav {
 
 .logo h2 {
     font-size: 22px;
+    letter-spacing: 2px;
     font-weight: 700;
 }
 
@@ -67,8 +69,7 @@ nav ul li a:hover {
 .right-nav {
     display: flex;
     gap: 20px;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .right-nav button {
@@ -81,6 +82,10 @@ nav ul li a:hover {
     cursor: pointer;
     font-size: 14px;
     font-weight: 600;
+    margin-left: 50px;
+    left: 80%;
+    top: 6%;
+    position: absolute;
 }
 
 .right-nav button:hover {
@@ -95,9 +100,10 @@ nav ul li a:hover {
     display: none;
 }
 
-/* main {
+main {
     width: 1920px;
-} */
+}
+
 .sec-padding {
     padding: 50px 240px;
 }
@@ -129,13 +135,62 @@ nav ul li a:hover {
     gap: 30px;
 }
 
-.drop-down input {
+/* .drop-down input {
     padding: 20px 90px;
     border: none;
     outline: none;
     background-color: rgba(255, 255, 255, 0.404);
     border-radius: 8px;
+} */
+/* .drop-down select{
+    padding: 20px 90px;
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: white;
+   
+    color: gray;
 }
+
+
+
+.drop-down select option{
+    padding: 5px 12px;
+    border: none;
+    outline: none;
+    
+} */
+
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 320px;
+  padding: 14px 18px;
+  font-size: 15px;
+  color: #888;
+  background-color: #fff;
+  border: 1.5px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23888' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+}
+
+select:focus {
+  border-color: #F5A623;
+}
+option:hover {
+  background-color: #F5A623;
+  color: #fff;
+}
+
+
+
 
 .drop-down button {
     padding: 15px 25px;
@@ -503,14 +558,11 @@ nav ul li a:hover {
 }
 
 .bottom-text-box .fav-box:hover {
-    /* background-color: #f7cd97; */
     transition: 0.3s ease-in-out;
     cursor: pointer;
     transform: translateY(-5%);
 
 }
-
-
 
 /* Partnership section */
 .feedback-section {
@@ -557,8 +609,7 @@ nav ul li a:hover {
     flex-direction: column;
     gap: 30px;
     padding: 50px 60px;
-    overflow: hidden;
-
+    overflow-x: hidden;
 }
 
 .partnership h1 {
@@ -629,7 +680,6 @@ nav ul li a:hover {
     flex-direction: column;
     border-radius: 12px;
     position: relative;
-
 }
 
 .left-news img {
@@ -812,6 +862,63 @@ nav ul li a:hover {
     color: #F29F05;
 }
 
+
+
+
+ /*---------------------------------About Us Section------------------------------------------------*/
+
+
+.about-hero-section{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+.about-hero-section .left-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 40%;
+}
+.left-about h1{
+    font-size: 3.7rem;
+}
+.left-about p{
+    font-size: 1.8rem;
+    color: gray;
+}
+
+.about-hero-section  .right-about{
+    /* background-color: green; */
+    padding: 40px 25px;
+    border: 8px solid white;
+    border-radius: 16px;
+    width: 35%;
+}
+.about-hero-section  .right-about img{
+    transform: rotate(20deg);
+    width: 100%;
+    border-radius: 26px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 footer {
     width: 100%;
     background-color: #363636;
@@ -900,7 +1007,6 @@ footer .top-footer {
 
 
 @media (max-width: 768px) {
-
 
     header {
         justify-content: space-between;
@@ -1098,8 +1204,6 @@ footer .top-footer {
 
     .top-img-box {
         flex-direction: column;
-        /* max-width: 100%; */
-        /* height: auto; */
     }
 
     .top-img-box img {
@@ -1309,23 +1413,28 @@ footer .top-footer {
         gap: 20px;
     }
 
+
+
+    
     footer {
         width: 100%;
         padding: 0;
+        margin: 0;
     }
 
     footer .top-footer {
         flex-direction: column;
         gap: 50px;
         padding: 30px 50px;
-       align-items: flex-start;
-
+        align-items: flex-start;
     }
+
     .top-footer .left h1 {
-    font-size: 3rem;
-}
-.top-footer .left p {
-    font-size: 1.2rem;
-}
+        font-size: 3rem;
+    }
+
+    .top-footer .left p {
+        font-size: 1.2rem;
+    }
 
 }
