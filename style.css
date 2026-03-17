@@ -965,13 +965,12 @@ option:hover {
     color: gray;
 }
 .mcards:hover{
-    background-color:rgb(192, 86, 0);;
+    background: linear-gradient(to right, #c05600, #ff8c00, #ffb347);
     transition: 0.1s ease-out;
     color: white;
     p{
         color: white;
     }
-    
 }
 
 
@@ -1010,13 +1009,221 @@ option:hover {
 }
 
 
+/*--------------------------------------Banner Section------------------------------------- */
+
+
+.banner{
+   /* background-color: #FFFFFF; */
+    display: flex;
+    align-items: center;
+    gap:80px;
+}
+.banner img{
+    max-width: 100%;
+    height: auto;
+}
+.banner .right{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 15px;
+}
+.banner .right h1{
+    font-size: 2.8rem;
+   text-align: left;
+}
+.banner-box{
+    display: flex;
+    padding: 50px 70px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    gap: 5px;
+    background-color: white;
+}
+
+.banner-box h2{
+    font-size: 2.2rem;
+    color: #F29F05;
+    font-weight: 800;
+}
+.banner-box p{
+    color: gray;
+    white-space: wrap;
+    font-size: 1rem;
+}
+
+
+/* -------------------------------Team Section----------------------------------------- */
 
 
 
+.team-section{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap:80px;
+}
+.team-section h1{
+    font-size: 3.5rem;
+    text-align: center;
+}
+.team-section p{
+    font-size: 1.3rem;
+   align-self: center;
+   color: gray;
+    width: 60%;
+}
+
+.team-persons{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.team-persons .person{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+.team-persons .person h2{
+    font-size: 1.7rem;
+}
+.team-persons .person p{
+    font-size: 1.2rem;
+    color: gray;
+    text-align: center;
+}
+.team-persons .person ul{
+    margin-top: 10px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.team-persons .person ul li{
+    list-style:none;
+}
+.team-persons .person ul li a{
+    padding: 10px 20px;
+    border-radius: 50%;
+    border: 1px solid gray; 
+}
+
+.team-persons .person ul li a:hover{
+    background-color: #ffb338;
+    transition: 0.2s ease-in;
+}
 
 
 
+.sponsers{
+    padding-top: 150px;
+}
+.sponsers h1{
+    font-size: 3.5rem;
+    text-align: center;
+}
+.sponsers-brand{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    gap: 70px;
+    margin-top: 30px;
 
+}
+.sponsers-brand .brand{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.sponsers-brand .brand{
+    color: gray;
+    font-size: 1.1rem;
+}
+
+.customer-review{
+    display: flex;
+    padding: 100px 5px;
+
+}
+.customer-text{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    gap: 20px;
+}
+.customer-text h2{
+    font-size: 3rem;
+    text-align: left;
+}
+.customer-text p{
+    font-size: 1.2rem;
+    width: 100%;
+}
+.customer1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.customer1 p{
+    font-size: 1.1rem;
+    padding: 5px;
+}
+.thomas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.thomas p{
+    font-size: 1.1rem;
+}
+
+.subscribe-section{
+    background-image: url("https://bslthemes.com/html/quickeat/assets/img/background-img.jpg");
+    display: flex;
+    flex-direction: column;
+    background-color: #F29F05;
+}
+.subscribe-section h1{
+    font-size: 2.7rem;
+    color: white;
+    font-weight: 800;
+}
+.subscribe-section .sub-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.sub-text input{
+    padding: 18px 90px;
+    border: none;
+    outline: none;
+    border-radius: 16px;
+}
+.sub-text button{
+    padding: 17px 30px;
+    outline: none;
+    background-color: black;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.sub-text button:hover{
+    background-color: white;
+    color: black;
+    transition: 0.2s ease-in-out;
+}
 
 
 
